@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+// ============
+// VARIABLES
+// ============
+$themeColor: black;
+// ============
+// VARIABLES
+// ============
+
+// ============
+// GLOBAL START
+// ============
+html {
+	font-size: 62.5%;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+// ============
+// GLOBAL END
+// ============
+
+// ============
+// HEADER START
+// ============
+.header_container {
+	display: flex;
+	justify-content: center;
+	padding: 2.5rem 0rem;
+
+	.active {
+		background-color: $themeColor;
+
+		button {
+			color: white;
+		}
+	}
+
+	a:nth-child(1) {
+		border-top-left-radius: 6px;
+		border-bottom-left-radius: 6px;
+
+		button {
+			border-top-left-radius: 6px;
+			border-bottom-left-radius: 6px;
+		}
+	}
+	a:nth-child(2) {
+		border-top-right-radius: 6px;
+		border-bottom-right-radius: 6px;
+
+		button {
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+		}
+	}
+
+	a {
+		button {
+			background: transparent;
+			padding: 0.8rem 6rem;
+			letter-spacing: 1.2px;
+			outline: none;
+			font-weight: 600;
+			font-size: 1.4rem;
+			border: 1px solid black;
+		}
+	}
+}
+
+// ============
+// HEADER END
+// ============
+
+// ============
+// ALBUM BODY START
+// ============
+.ABody_container {
+	max-width: 1000px;
+	margin: auto;
+
+	input {
+		width: 100%;
+		height: 3.5rem;
+		border-radius: 6px;
+		font-size: 2rem;
+		border: 2.5px solid black;
+		padding: 1.6rem 1.5rem;
+		letter-spacing: 1.2px;
+	}
+
+	.albumCard {
+		width: inherit;
+
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 6px;
+		}
+	}
+}
+// ============
+// ALBUM BODY EMD
+// ============
+
+// ============
+// MUSIC BODY START
+// ============
+.MBody_container {
+	max-width: 1000px;
+	margin: auto;
+	margin-bottom: 5rem;
+
+	.headAndSearch {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid black;
+
+		h2 {
+			font-size: 3rem;
+		}
+
+		input {
+			height: 2.5rem;
+			width: 25%;
+			font-size: 1.7rem;
+			border: 2px solid rgb(24, 24, 24);
+			padding: 1.2rem 0.8rem;
+			border-radius: 3px;
+		}
+	}
+
+	.songRow:nth-child(odd) {
+		background-color: rgb(248, 248, 248);
+	}
+
+	.songRow {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 5.4rem;
+		border-bottom: 1px solid black;
+		padding: 0rem 0.6rem;
+
+		.play {
+			font-size: 2.2rem;
+			height: 3.4rem;
+			width: auto;
+			border-radius: 50%;
+		}
+
+		div:nth-child(1) {
+			display: flex;
+			align-items: center;
+			font-size: 1.1rem;
+
+			div:nth-child(1) {
+				font-size: 1.4rem;
+				margin-bottom: -0.3rem;
+				font-weight: 600;
+				letter-spacing: 1.2px;
+			}
+		}
+
+		#duration {
+			font-size: 1.5rem;
+		}
+
+		.SSD_icons {
+			font-size: 2rem;
+		}
+	}
+}
+
+.music_player {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+}
+
+// ============
+// MUSIC BODY EMD
+// ============
+
+// ============
+// MUSIC BODY EMD
+// ============
+// .rhap_progress-indicator {
+// 	background-color: black !important;
+// }
+// ============
+// MUSIC BODY EMD
+// ============

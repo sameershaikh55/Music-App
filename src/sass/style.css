@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.5rem 0rem;
+}
+
+.header_container .active {
+  background-color: black;
+}
+
+.header_container .active button {
+  color: white;
+}
+
+.header_container a:nth-child(1) {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.header_container a:nth-child(1) button {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.header_container a:nth-child(2) {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.header_container a:nth-child(2) button {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.header_container a button {
+  background: transparent;
+  padding: 0.8rem 6rem;
+  letter-spacing: 1.2px;
+  outline: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border: 1px solid black;
+}
+
+.ABody_container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.ABody_container input {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 6px;
+  font-size: 2rem;
+  border: 2.5px solid black;
+  padding: 1.6rem 1.5rem;
+  letter-spacing: 1.2px;
+}
+
+.ABody_container .albumCard {
+  width: inherit;
+}
+
+.ABody_container .albumCard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.MBody_container {
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.MBody_container .headAndSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.MBody_container .headAndSearch h2 {
+  font-size: 3rem;
+}
+
+.MBody_container .headAndSearch input {
+  height: 2.5rem;
+  width: 25%;
+  font-size: 1.7rem;
+  border: 2px solid #181818;
+  padding: 1.2rem 0.8rem;
+  border-radius: 3px;
+}
+
+.MBody_container .songRow:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.MBody_container .songRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5.4rem;
+  border-bottom: 1px solid black;
+  padding: 0rem 0.6rem;
+}
+
+.MBody_container .songRow .play {
+  font-size: 2.2rem;
+  height: 3.4rem;
+  width: auto;
+  border-radius: 50%;
+}
+
+.MBody_container .songRow div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
+}
+
+.MBody_container .songRow div:nth-child(1) div:nth-child(1) {
+  font-size: 1.4rem;
+  margin-bottom: -0.3rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.MBody_container .songRow #duration {
+  font-size: 1.5rem;
+}
+
+.MBody_container .songRow .SSD_icons {
+  font-size: 2rem;
+}
+
+.music_player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */
